@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author User
  */
-public class NewServlet1 extends HttpServlet {
+public class Service extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,8 +38,8 @@ public class NewServlet1 extends HttpServlet {
             out.println("<title>Servlet NewServlet1</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Im form Secound Page at " + request.getContextPath() + "</h1>");
-             out.println("<a href= "+ request.getContextPath()+">Home</a>");
+            out.println("<h1>This is Service Page </h1>");
+             out.println("<a href= "+ request.getContextPath()+">Home Page</a>");
             out.println("</body>");
             out.println("</html>");
         }

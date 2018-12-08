@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author User
+ * @author MAHBUB
  */
-public class NewServlet extends HttpServlet {
+public class Help extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,12 +35,10 @@ public class NewServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet NewServlet</title>");            
+            out.println("<title>Servlet Help</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>This is Home Page at " + request.getContextPath() + "</h1>");
-            out.println("<a href= "+ request.getContextPath()+"/mahbub.html> 2nd Page</a>");
-            
+            out.println("<h1>Servlet Help at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
