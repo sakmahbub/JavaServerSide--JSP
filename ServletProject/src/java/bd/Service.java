@@ -35,11 +35,17 @@ public class Service extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet NewServlet1</title>");            
+            out.println("<title>Servlet NewServlet1</title>");
             out.println("</head>");
             out.println("<body>");
+            
+
+            out.println("<a href= " + request.getContextPath() + "/Home.html>Home |</a>");
+            out.println("<a href= " + request.getContextPath() + "/Service.html> Service | </a>");
+            out.println("<a href= " + request.getContextPath() + "/Help.html>Help </a>");
+            
             out.println("<h1>This is Service Page </h1>");
-             out.println("<a href= "+ request.getContextPath()+">Home Page</a>");
+
             out.println("</body>");
             out.println("</html>");
         }

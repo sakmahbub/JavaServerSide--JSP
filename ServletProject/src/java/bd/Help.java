@@ -35,10 +35,16 @@ public class Help extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Help</title>");            
+            out.println("<title>Servlet Help</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Help at " + request.getContextPath() + "</h1>");
+           
+            
+            out.println("<a href= " + request.getContextPath() + "/Home.html>Home |</a>");
+            out.println("<a href= " + request.getContextPath() + "/Service.html> Service | </a>");
+            out.println("<a href= " + request.getContextPath() + "/Help.html>Help </a>");
+            out.println("<h1>This is Help Page </h1>");
+            
             out.println("</body>");
             out.println("</html>");
         }
