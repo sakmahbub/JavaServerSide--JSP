@@ -95,7 +95,7 @@ public class FrontController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        //load the Action
+        //load the Action1
         String name=request.getPathInfo().substring(1);
         
         

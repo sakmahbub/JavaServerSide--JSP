@@ -10,11 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author MAHBUB
+ * @author User
  */
 public interface Action {
-    
-    public String process(HttpServletRequest request, HttpServletResponse response)
+     public String process(HttpServletRequest request, HttpServletResponse response)
             throws SecurityException;
     
 }
