@@ -17,33 +17,47 @@
 
     </head>
     <body>
-        <h1>~~EL and simple JavaBeans~~</h1>
+        <h1>Student Registration form</h1>
+        
         <table border="2">
-<!--            <tr>
-                <td>${person.name}</td>
-                <td>${person.email}</td>
-                <td>${person.password}</td>
-                <td>${person.age}</td>
-                <td>&nbsp;</td>
-            </tr>-->
+            <!--            <tr>
+                            <td>${person.name}</td>
+                            <td>${person.email}</td>
+                            <td>${person.password}</td>
+                            <td>${person.age}</td>
+                            <td>&nbsp;</td>
+                        </tr>-->
 
 
-            <tr>
+            
+            
+
             <form action="showData.jsp" method="post">
-                <td>Name</td>
-                <td><input type="text" name="name"/></td>
-                <td>Email</td>
-                <td><input type="text" name="email"/></td>
-                <td>Password</td>
-                <td><input type="password" name="password"/></td>
-                <td>Age</td>
-                <td><input type="text" name="age"/></td>
-                <td><input type="submit" value="Send" /></td>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name"/></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email"/></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"/></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" name="age"/></td>
+                </tr>
+                <tr>
+                   
+                    <td><input type="submit" value="Send" /></td>
+                     
+                </tr>
 
             </form>
 
-
-        </tr>
+        
 
     </table>
 </body>
