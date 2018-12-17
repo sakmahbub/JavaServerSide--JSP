@@ -20,6 +20,8 @@ public class StudentCon {
         this.stdu = stdu;
     }
     
-    
+    public void reset(){
+    stdu=new Student();
+    }
     
 }
