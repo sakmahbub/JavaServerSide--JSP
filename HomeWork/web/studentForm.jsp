@@ -33,6 +33,20 @@
                             </h:selectOneRadio></td>
                     </tr>
 
+                    <tr>
+                        <td>Education:</td>
+                        <td>
+                          
+                            <h:selectManyCheckbox  value="#{std.stdu.education}">
+                                
+                                <f:selectItem itemValue="SSC" itemLabel="SSC"/>
+                                <f:selectItem itemValue="HSC" itemLabel="HSC"/>
+                                <f:selectItem itemValue="Honours" itemLabel="Honours"/>
+                                <f:selectItem itemValue="Masters" itemLabel="Masters"/>
+
+                            </h:selectManyCheckbox></td>
+                    </tr>
+
 
                     <tr>
                         <td>Round:</td>
@@ -54,16 +68,18 @@
 
                     <tr>
                         <td>Password:</td>
-                        <td><h:inputText value="#{std.stdu.password}"/></td>
+                        <td><h:inputSecret value="#{std.stdu.password}"/></td>
                     </tr>
 
+                    
+                     
 
                     <tr>
                         <td></td>
                         <td><h:commandButton value="Submit" action="submit"/>
                             <h:commandButton action="#{std.reset()}" value="Reset"/>
                         </td>
-           
+
                     </tr>
 
 

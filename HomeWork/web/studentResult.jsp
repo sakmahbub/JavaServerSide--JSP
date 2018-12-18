@@ -15,17 +15,15 @@
     </head>
     <body>
         <h1>Student Data IDB</h1>
-    <h:form>
+
         ID: <h:outputText value="#{std.stdu.id}" /><br><br>
        Name: <h:outputText value="#{std.stdu.name}" /><br><br>
        Gender: <h:outputText value="#{std.stdu.gender}" /><br><br>
+       Education: <h:outputText value="#{std.stdu.education}" /><br><br>      
        Round: <h:outputText value="#{std.stdu.round}" /><br><br>
        Email: <h:outputText value="#{std.stdu.email}" /><br><br>
-       Password: <h:outputText value="#{std.stdu.password}" /><br>
-        
-        
-    </h:form>
-        
+       Password: <h:outputText value="#{std.stdu.password}" /><br><br>
+       
     </body>
     </f:view>
 </html>
