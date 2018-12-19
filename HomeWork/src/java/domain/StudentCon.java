@@ -11,11 +11,6 @@ public class StudentCon {
     private Student stdu;
 
     public StudentCon() {
-        for (String s : stdu.getEducation()) {
-            System.out.println("S: " + s);
-        }
-
-        System.out.println("" + getStdu());
     }
 
     public Student getStdu() {
