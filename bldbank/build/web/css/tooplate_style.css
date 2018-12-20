@@ -442,12 +442,15 @@ a.social_btn:hover { color: #bd9213 }
 #tooplate_copyright_wrapper {
 	width: 100%;
 	background: #000000;
+        
 }
 
 #tooplate_copyright {
 	width: 960px;
 	padding: 10px;
-	color: #39302b;
+	color: #fff;
 	margin: 0 auto;
 	text-align: center;
+        
 }
+
