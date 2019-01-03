@@ -8,6 +8,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    
+    
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
@@ -19,6 +21,6 @@
         
     </c:if>
         <a href="login.jsp">Logout</a>
-        <c:out value="${sessionScope['LoninUser']}"></c:out>
+        <c:out value="${sessionScope['loginUser']}"></c:out>
     </body>
 </html>
