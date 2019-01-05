@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <style>
+            .mm{ text-align: center;}
+        </style>
+        
+    </h:head>
+    <h:body>
+        <h:form class="">
+            <table class="">
+                <tr>
+                    <td>Pid</td>
+                    <td>Pname</td>
+                    <td>Price</td>
+                    <td>Stock</td>
+                    <td>Tprice</td>
+                </tr>
+                <c:forEach var="p" items="#{product.doShow()}">
+                    <tr>
+                        <td>#{p.pid}</td>
+                        <td>#{p.pname}</td>
+                        <td>#{p.price}</td>
+                        <td>#{p.stock}</td>
+                        <td>#{p.tprice}</td>
+                    </tr>
+                </c:forEach>
+            </table>
+            <h:commandButton action="insert.xhtml" value="Insert"></h:commandButton>
+            <h:commandButton action="update.xhtml" value="Update"></h:commandButton>
+            <h:commandButton action="delete.xhtml" value="Delete"></h:commandButton>
+            <h:commandButton action="index.xhtml" value="Home"></h:commandButton>
+        </h:form>
+    </h:body>
+</html>
+
