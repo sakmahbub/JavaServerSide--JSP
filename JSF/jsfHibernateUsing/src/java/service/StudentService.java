@@ -17,6 +17,7 @@ public class StudentService {
         Session session = sessionFactory.getCurrentSession();
         Transaction tr = session.beginTransaction();
         session.saveOrUpdate(student);
+        System.out.println("Success");
         tr.commit();
 
     }
@@ -27,6 +28,7 @@ public class StudentService {
         Session session = sessionFactory.getCurrentSession();
         Transaction tr = session.beginTransaction();
         session.delete(student);
+        System.out.println("Delete Success");
         tr.commit();
 
     }
@@ -43,6 +45,7 @@ public class StudentService {
             tr.commit();
 
         } catch (Exception e) {
+            System.out.println("Something Worng");
         }
 
         return student;
