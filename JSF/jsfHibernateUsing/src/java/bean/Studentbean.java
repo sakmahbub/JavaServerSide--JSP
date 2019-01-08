@@ -80,4 +80,9 @@ public class Studentbean {
         this.ccompleted = ccompleted;
     }
     
+    
+    
+    public void reset(){
+    student=new Student();
+    }
 }

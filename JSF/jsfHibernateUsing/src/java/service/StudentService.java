@@ -57,8 +57,9 @@ public class StudentService {
             
             SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
             Session session = sessionFactory.getCurrentSession();
-            students = session.createCriteria("FROM Student").list();
             Transaction tr = session.beginTransaction();
+            students = session.createQuery("FROM Student").list();
+            
             tr.commit();
             
         } catch (Exception e) {

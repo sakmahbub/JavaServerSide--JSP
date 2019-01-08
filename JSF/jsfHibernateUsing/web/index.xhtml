@@ -11,6 +11,10 @@
     </h:head>
     <h:body>
         <h:form>
+            <h:commandButton action="index.xhtml" value="Go Home Page"/>
+            <h:commandButton action="edit.xhtml" value="Go Update Page"/>
+            <h:commandButton action="delete.xhtml" value="Go Delete Page"/>
+            
             <h:panelGrid columns="2">
                 
                 <h:outputLabel>Name: </h:outputLabel>
@@ -18,17 +22,17 @@
                 
                 <h:outputLabel>Round:</h:outputLabel>
                 <h:selectOneMenu value="#{studentbean.student.round}">
-                    <f:selectItem itemValue="Round-36" itemLabel="Round-36"/>
-                    <f:selectItem itemValue="Round-37" itemLabel="Round-37"/>
-                    <f:selectItem itemValue="Round-38" itemLabel="Round-38"/>
-                    <f:selectItem itemValue="Round-39" itemLabel="Round-39"/>
+                    <f:selectItem itemValue="Null" itemLabel="Select The Round"/>
+                    <f:selectItem itemValue="37" itemLabel="Round-37"/>
+                    <f:selectItem itemValue="38" itemLabel="Round-38"/>
+                    <f:selectItem itemValue="39" itemLabel="Round-39"/>
                 
                 </h:selectOneMenu>
                 
                 
                 
                 <h:outputLabel>Course: </h:outputLabel>
-                <h:selectManyCheckbox value="#{studentbean.student.coruseCompleted}">
+                <h:selectManyCheckbox value="#{studentbean.ccompleted}">
                     <f:selectItem itemValue="ppt" itemLabel="PPT"/>
                     <f:selectItem itemValue="java" itemLabel="Java"/>
                     <f:selectItem itemValue="html" itemLabel="HTML"/>
@@ -46,11 +50,13 @@
                 
                 
                 <h:commandButton action="#{studentbean.seve()}" value="Submit"/>
-                
+                <h:commandButton action="#{studentbean.reset()}" value="Reset"/>
                 
             </h:panelGrid>
           
         </h:form>
+        
+        
         <br/>
         <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
         <br/><br/>
