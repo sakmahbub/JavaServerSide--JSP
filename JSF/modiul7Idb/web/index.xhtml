@@ -10,9 +10,11 @@
     <h:body>
         <h:form>
             <h:panelGrid columns="2">
-                <h:outputLabel>ID: </h:outputLabel>
-                <h:inputText value="#{studentBean.student.id}"/>
-
+                <h:outputLabel value="ID"/>
+                <h:inputText value="#{studentBean.student.id}" />
+                
+                
+                
                 <h:outputLabel>Name: </h:outputLabel>
                 <h:inputText value="#{studentBean.student.name}"/>
 
@@ -53,7 +55,7 @@
                     <f:selectItem itemLabel="Rangpur" itemValue="Rangpur"/>
                 </h:selectOneMenu>
             </h:panelGrid>
-            
+
             <h:commandButton action="#{studentBean.save()}" value="Submit"/>
             <h:commandButton action="#{studentBean.update()}" value="Update"/>
             <h:commandButton action="#{studentBean.dalete()}" value="Delete"/>
@@ -63,35 +65,35 @@
         <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
         <br />
         <br />
-        
-        
+
+
         <p:dataTable var="s" value="#{studentBean.list}">
             <p:column headerText="ID">
                 <h:outputText value="#{s.id}"/>
             </p:column>
-            
+
             <p:column headerText="Name">
                 <h:outputText value="#{s.name}"/>
             </p:column>
-            
+
             <p:column headerText="Gender">
                 <h:outputText value="#{s.gender}"/>
             </p:column>
-            
-            
+
+
             <p:column headerText="Round">
                 <h:outputText value="#{s.round}"/>
             </p:column>
-            
+
             <p:column headerText="Course">
                 <h:outputText value="#{s.course}"/>
             </p:column>
-            
+
             <p:column headerText="Location">
                 <h:outputText value="#{s.location}"/>
             </p:column>
-            
-            
+
+
         </p:dataTable>
     </h:body>
 </html>
